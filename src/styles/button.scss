@@ -1,0 +1,34 @@
+.button{
+    margin-top: 64px;
+      height: 50px;
+      border-radius: 8px;
+      font-weight: 500;
+      background: #835afd;
+      color: #FFF;
+
+      padding: 0 32px; //pro texto não ficar grudado na lateral
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      cursor: pointer;
+      border: 0;
+  
+      transition: filter 0.2s;
+  
+      img {
+        margin-right: 8px; //distanciando a imagem do texto
+      }
+  
+      &:not(:disabled):hover { //quando o botao estiver desabilitado ele vai trocar a cor
+        filter: brightness(0.9); //efeito quando passar o mouse por cima
+      }
+
+      &:disabled {
+          opacity: 0.6;
+          cursor: not-allowed;
+      }
+
+
+}
